@@ -86,6 +86,12 @@ public class DialogContent extends Parent{
     @FindBy(xpath="(//mat-option//span)[2]")
     private WebElement gradeLevel2;
 
+    @FindBy(xpath="//*[@id='ms-table-0']/div/cdk-virtual-scroll-viewport/div[1]/table/tbody/tr/td[3]/div[1]/ms-edit-button/button")
+    public WebElement editAttestations;
+
+    @FindBy(xpath="//*[@id='container-3']/content/app-attestation/ms-browse/div/ms-browse-search/div/mat-form-field")
+    public WebElement attestationsName;
+
 
     public WebElement getWebElement(String strButton){
 
@@ -102,12 +108,16 @@ public class DialogContent extends Parent{
             case "academicPeriod1" : return academicPeriod1;
             case "gradeLevel" : return gradeLevel;
             case "gradeLevel2" : return gradeLevel2;
+            case "editAttestations" : return editAttestations;
+            case "attestationsName" : return attestationsName;
+            case "searchInput" : return searchInput;
+            case "searchButton" : return searchButton;
+            case "deleteImageBtn" : return deleteImageBtn;
+            case "deleteDialogBtn" : return deleteDialogBtn;
         }
 
         return null;
     }
-
-
 
 
     public void deleteItem(String searchText){
