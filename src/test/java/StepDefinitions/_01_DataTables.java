@@ -181,4 +181,8 @@ public class _01_DataTables {
     @And("we should have search function for this page.")
     public void weShouldHaveSearchFunctionForThisPage() {
     }
+
+    @Then("option to  activate and deactivite Subject Categories")
+    public void optionToActivateAndDeactiviteSubjectCategories() {
+    }
 }
