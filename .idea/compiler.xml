@@ -9,5 +9,8 @@
         <module name="Cucumber_Kursu5" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MersysTechnology" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
